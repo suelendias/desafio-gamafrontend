@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style.css">
+
+        <title>JobsNET</title>
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <img src="./jobsnet-branco.png" alt="logo jobsnet" width="60%">
+            </div>
+            <ul>
+                <li>
+                    <a target="_blank" href=""> home </a>
+                </li>
+                <li>
+                    <a target="_blank" href=""> quem somos</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://wa.me/11999999999">contato</a>
+                </li>
+                
+            </ul>
+        </header>
+
+        <main>
+                <div>
+                    <p class="about">A empresa JobsNET é especialista na seleção de profissionais nas mais diversas áreas.<br>
+                        Cadastre-se abaixo para fazer parte do nosso banco de talentos!</p><br><br>
+                </div>
+            
+                <form action="https://uploadgama-backend.herokuapp.com" method="post" id="formulario">
+                <div class="borda1">
+                    <h2>Dados Pessoais</h2> 
+                    <hr>
+                    <br> 
+
+                    <div class="container-1">
+                        <div>
+                            <label for="nome">Nome Completo</label>    
+                            <label for="*" style="color: green;">*</label><br>                
+                            <input type="text"  name="nome" id="nome" size="70" maxlength="70" autofocus required><br>                       
+                        </div>
+
+                        <div>
+                            <label for="cargo">Cargo Pretendido </label>    
+                            <label for="*" style="color: green;">*</label><br>                
+                            <input type="text" name="cargo" id="cargo" size="40" maxlength="40" required><br>                      
+                        </div>
+                    </div>
+
+
+                    <div class="container-2">
+                        <div>
+                            <label for="nascimento">Data de Nascimento </label> 
+                            <label for="*" style="color: green;">*</label>
+                            <input type="date" name="nascimento" id="datanascimento" size="12" maxlength="12" required>                        
+                        </div>
+
+                        <div>
+                            <label for="civil">Estado Civil </label>                             
+                            <select id="civil" name="civil">
+                                <option>Selecione</option>
+                                <option>Solteiro (a)</option>
+                                <option>Casado (a)</option>     
+                                <option>Divorciado (a)</option> 
+                                <option>Viúvo (a)</option>       
+                                <option>Separado (a)</option>                        
+                            </select><br>
+                        </div>
+
+
+                        <div>
+                            <label for="sexo">Sexo </label>                            
+                            <select id="sexo" name="genero">
+                                <option>Selecione</option>
+                                <option>Masculino</option>
+                                <option>Feminino</option>     
+                                <option>Prefiro não dizer</option>                                                
+                            </select> <br>
+                        </div>
+
+                    </div>
+
+
+                    <div class="container-3">   
+                        <div>
+                            <label for="cep">CEP </label>
+                            <label for="*" style="color: green;">*</label><br>
+                            <input type="text" name="cep" id="cep" size="9" maxlength="9" required>  
+                        </div>
+
+                        <div>
+                            <label for="endereco">Endereço </label>
+                            <label for="*" style="color: green;">*</label><br>
+                            <input type="text" name="endereco" id="endereco" placeholder="Ex: Nome da Rua" size="90" maxlength="90" required><br>                     
+                        </div>
+
+                        <div>
+                            <label for="numero">Número</label>
+                            <label for="*" style="color: green;">*</label><br>
+                            <input type="text" name="numero" id="numero" size="10" maxlength="10" required><br>
+                        </div>
+                    </div>
+
+
+                    <div class="container-4"> 
+
+                        <div>
+                            <label for="bairro">Bairro </label> 
+                            <label for="*" style="color: green;">*</label><br>                     
+                            <input type="text" name="bairro" id="bairro" size="30" maxlength="30" required><br>                       
+                        </div>
+
+                        <div>
+                            <label for="cidade">Cidade </label>  
+                            <label for="*" style="color: green;">*</label><br>                      
+                            <input type="text" name="cidade" id="cidade" size="40" maxlength="40" required><br>                        
+                        </div>
+
+                        <div>
+                            <label for="estado">Estado </label>      
+                            <label for="*" style="color: green;">*</label><br>              
+                            <input type="text" name="estado" id="estado" size="20" maxlength="20" required><br>                       
+                        </div>
+
+                    </div>
+
+
+                    <div class="container-5"> 
+
+                        <div>
+                            <label for="telefone">Telefone </label><br>
+                            <input type="tel" name="telefone" id="telefone" placeholder="ex: 3595-5678" pattern="[0-9]{4}[0-9]{4}"><br>
+                        </div>                       
+                        
+                        <div>
+                            <label for="celular">Celular </label>
+                            <label for="*" style="color: green;">*</label><br>
+                            <input type="tel" name="celular" id="celular" required placeholder="ex: 99985-5678" pattern="[0-9]{5}-[0-9]{4}"><br>
+                        </div>
+
+                        <div>
+                            <label for="email">E-mail </label>    
+                            <label for="*" style="color: green;">*</label><br>               
+                            <input type="email" name="email" id="email" placeholder="ex: myname@example.com" size="50" maxlength="50" required><br><br>          
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <br>
+                <div class="borda2">
+                <h2>Documentos</h2>
+                <hr>
+                <br>
+
+                <div class="container-6"> 
+
+                    <div> 
+                        <label for="txtCPF">CPF </label>
+                        <label for="*" style="color: green;">*</label><br>
+                        <input type="text" id="cpf1" name="txtCPF" maxlength="11" required/>                     
+                    </div>
+
+                    <div>
+                        <label for="rg">Identidade </label>
+                        <label for="*" style="color: green;">*</label><br>
+                        <input type="input" name="rg" id="rg" maxlength="15" required><br>   
+                    </div>
+
+                </div>
+
+                <div class="container-7"> 
+                    <div>
+                        <label for="veiculo">Possui veículo? </label>
+                            <select id="veiculo" name="veiculo">
+                                <option>Selecione</option>
+                                <option>Sim</option>
+                                <option>Não</option>                                  
+                            </select>
+                    </div>
+
+                    <div>
+                    <label for="habilitacao">Habilitação </label>
+                        <select id="habilitacao" name="habilitacao">
+                            <option>Selecione</option>
+                            <option>CNH A</option>
+                            <option>CNH B</option>
+                            <option>CNH C</option>
+                            <option>CNH D</option>
+                            <option>CNH E</option>
+                            <option>Não possuo</option>            
+                        </select>
+                    </div>
+
+                    
+
+                </div>
+                </div>   
+                
+                <br>
+                <br>  
+                        <button class="buttonInput" type="submit"  onclick='javascript:validarNome()'> enviar!</button>  </form>
+                <br>
+                <br>  
+                <br>
+                <br> 
+
+                <!-- <div class="container page-header">
+                    <div id="success" class="alert alert-success" style="display: none;" role="alert">
+                        <strong style="color:green;">Canditato registrado com sucesso. Boa sorte!</strong> 
+                    </div>
+        
+                    <div id="error" class="alert alert-danger" style="display: none;" role="alert">
+                        <strong style="color:green;">Atenção!</strong> CPF informado inválido.
+                    </div>
+                </div> -->
+                
+        </main>
+
+        <footer>
+
+            <p class="jobs">JobsNET</p>
+            <p class="copyrights"> &copy; Copyright Jobsnet - 2021</p>
+    
+        </footer>
+    </body>
+
+
+  
+
+    <script src="./script.js"></script>
+
+    
+    
+</html>

@@ -1,0 +1,208 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(15, 15, 15); 
+    font-family: 'Poppins', sans-serif;
+    text-align: center;    
+}
+
+li
+{
+    list-style: none;   
+    display: flex; 
+}
+
+a
+{
+    text-decoration: none;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    /*border-bottom: 1px solid #fff;*/
+    /*box-shadow: 1px 1px 10px 1px #fff;*/
+    border-bottom: 15px ridge rgb(32, 223, 73);
+    margin-bottom: 40px;
+}
+
+header ul
+{
+    display: flex;
+}
+
+header ul li
+{
+    padding: 5px;
+}
+
+header ul li a
+{
+    transition: 300ms;
+}
+
+header ul li a:hover
+{
+    color: rgb(32, 223, 73);
+    text-decoration: underline;
+}
+
+.about
+{
+    font-size: 18px;
+    text-align: justify;
+    max-width: 900px;
+    margin: 0 auto;
+} 
+
+form 
+{
+    font-size: 80%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 1px;
+}
+
+.borda1
+{
+    border: 1px solid #CCC;
+    padding: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.borda2
+{
+    border: 1px solid #CCC;
+    padding: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.container-1
+{
+    display: flex; 
+    justify-content: center;
+    
+}
+
+.container-1 div
+{
+    margin: 5px;
+}
+
+.container-2
+{
+    display: flex; 
+    justify-content: center;
+}
+
+.container-2 div
+{
+    margin: 5px;
+}
+
+.container-3
+{
+    display: flex; 
+    justify-content: center;
+}
+
+.container-3 div
+{
+    margin: 5px;
+}
+
+.container-4
+{
+    display: flex; 
+    justify-content: center;
+}
+
+.container-4 div
+{
+    margin: 5px;
+}
+
+.container-5
+{
+    display: flex; 
+    justify-content: center;
+}
+
+.container-5 div
+{
+    margin: 5px;
+}
+
+.container-6
+{
+    display: flex; 
+    justify-content: center;
+}
+
+.container-6 div
+{
+    margin: 5px;
+}
+
+.container-7
+{
+    display: flex; 
+    justify-content: center;
+}
+
+.container-7 div
+{
+    margin: 5px;
+}
+
+button 
+{
+    width: 15%;
+    padding: 5px 10px;
+    background-color:rgb(6, 175, 43);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 20px;
+    margin-left:  -5px;   
+}
+
+button:hover
+{
+    background-color: rgb(22, 230, 67);
+    color: #fff;
+}
+
+footer
+{
+	text-align: center;
+	background: url("./background.png");
+	padding: 5px 0;  
+    border-top: 15px ridge rgb(32, 223, 73);
+    margin-top: 40px;   
+}
+
+.jobs
+{
+    color: #000000;
+	font-size: 20px;
+	margin: 0px 0 0;
+}
+
+.copyrights
+{
+    
+	color: #000000;
+	font-size: 13px;
+	margin: 0px 0 0;
+}
+
